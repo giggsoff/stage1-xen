@@ -25,7 +25,8 @@ then
 fi
 
 execs="enter run stop"
-netplugins="main/ptp main/bridge main/macvlan main/ipvlan ipam/host-local ipam/dhcp meta/flannel meta/tuning"
+#netplugins="main/ptp main/bridge main/macvlan main/ipvlan ipam/host-local ipam/dhcp meta/flannel meta/tuning"
+netplugins="main/ptp main/bridge main/macvlan main/ipvlan ipam/host-local meta/flannel meta/tuning"
 
 # Clean the repo, but save the vendor area
 if [ "x${1:-}" != "x" ] && [ "clean" == "$1" ]; then
@@ -84,21 +85,21 @@ if [ -f stage1-xen.aci ]; then
 fi
 
 # Build init
-cd init
-rm -rf vendor
-glide install -v
-cd ..
-go build -o target/rootfs/init init/init.go
+cd src/init
+export GOPATH=/go/stage1-xen
+go build -o target/rootfs/init
+cd ../..
 
 # Network plugins
 mkdir -p target/rootfs/usr/lib/rkt/plugins/net
-cd init
+cd src/init
 for i in $netplugins
 do
+    echo "Building $i"
     go build ./vendor/github.com/containernetworking/cni/plugins/$i
-    mv `echo $i | cut -d / -f 2` ../target/rootfs/usr/lib/rkt/plugins/net
+    mv `echo $i | cut -d / -f 2` ../../target/rootfs/usr/lib/rkt/plugins/net
 done
-cd ..
+cd ../..
 
 # Default network configs
 mkdir -p target/rootfs/etc/rkt/net.d

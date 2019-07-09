@@ -45,6 +45,22 @@
 			"revisionTime": "2018-01-24T15:52:24Z"
 		},
 		{
+			"checksumSHA1": "U9n8qcl0FZGJoaNpvJXMzNqEgTk=",
+			"path": "github.com/containernetworking/cni/pkg",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "Ew4nceNlpklP7zB0CI5O8xlzQp4=",
+			"path": "github.com/containernetworking/cni/pkg/invoke",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
 			"checksumSHA1": "F1utsFXSpgUtjxIZK8dyT5+Hi34=",
 			"path": "github.com/containernetworking/cni/pkg/ip",
 			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
@@ -61,24 +77,28 @@
 			"versionExact": "v0.4.0"
 		},
 		{
+			"checksumSHA1": "ZiJmQ52xR3Qy53NbfGRct4mVhQM=",
+			"path": "github.com/containernetworking/cni/pkg/skel",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
 			"path": "github.com/containernetworking/cni/pkg/sysctl",
-			"revision": "",
+			"revision": "v0.4.0",
 			"version": "v0.4.0",
 			"versionExact": "v0.4.0"
 		},
 		{
-			"checksumSHA1": "hq0pWw7MU74nQ8tnO5afBDwrYhU=",
-			"path": "github.com/containernetworking/cni/pkg/types",
+			"path": "github.com/containernetworking/cni/pkg/types/020",
 			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
-			"revisionTime": "2017-01-13T01:06:04Z",
 			"version": "v0.4.0",
 			"versionExact": "v0.4.0"
 		},
 		{
-			"checksumSHA1": "HRXk+NM68UpejiKx2XYPsyv02Hg=",
-			"path": "github.com/containernetworking/cni/pkg/utils",
+			"path": "github.com/containernetworking/cni/pkg/types/current",
 			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
-			"revisionTime": "2017-01-13T01:06:04Z",
 			"version": "v0.4.0",
 			"versionExact": "v0.4.0"
 		},
@@ -99,6 +119,102 @@
 			"versionExact": "v0.4.0"
 		},
 		{
+			"checksumSHA1": "SuXvoRn3CWy/GvUbqktbQ2z+SVs=",
+			"path": "github.com/containernetworking/cni/pkg/version",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "lKDCpGP3cUfWUJ6m8OkZdL1y/IU=",
+			"path": "github.com/containernetworking/cni/plugins/ipam/dhcp",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "127nXSZLUr+2Uw+/VElPOX3DeU8=",
+			"path": "github.com/containernetworking/cni/plugins/ipam/host-local",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "Hug6T2yjPxjFGCrcvjujTBcovyc=",
+			"path": "github.com/containernetworking/cni/plugins/ipam/host-local/backend",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "Zw7jqrIKQI3GSmn2KfTkfup2XPA=",
+			"path": "github.com/containernetworking/cni/plugins/ipam/host-local/backend/allocator",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "KTvFlQF9iYJuIVqTnu7I9cN+hH0=",
+			"path": "github.com/containernetworking/cni/plugins/ipam/host-local/backend/disk",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "elbB6NTmKOCPmTbRRM879n3oghM=",
+			"path": "github.com/containernetworking/cni/plugins/main/bridge",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "KJBQbgFyF4YmkOV5OtD5j4+/mTs=",
+			"path": "github.com/containernetworking/cni/plugins/main/ipvlan",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "j2aJOv7MADCWDwIrWvAid7EsFRM=",
+			"path": "github.com/containernetworking/cni/plugins/main/macvlan",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "Z+yKnSspRIguVfSWmqQBsZZ/ETY=",
+			"path": "github.com/containernetworking/cni/plugins/main/ptp",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "Ec94NVzuo8JLfCUho2YZ2v9l4Eo=",
+			"path": "github.com/containernetworking/cni/plugins/meta/flannel",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
+			"checksumSHA1": "hWG2S4exG/iS6EUxzUPjrdbNYdg=",
+			"path": "github.com/containernetworking/cni/plugins/meta/tuning",
+			"revision": "530dd71e193012895ff7beee42cd64a02e1993da",
+			"revisionTime": "2017-01-13T01:06:04Z",
+			"version": "v0.4.0",
+			"versionExact": "v0.4.0"
+		},
+		{
 			"checksumSHA1": "Bt1VjNX5bmjmJZ0lj7CsKJla2oY=",
 			"path": "github.com/coreos/go-iptables/iptables",
 			"revision": "f1d0510cabcb710d5c5dd284096f81444b9d8d10",
@@ -111,10 +227,28 @@
 			"revisionTime": "2018-01-08T23:09:05Z"
 		},
 		{
+			"checksumSHA1": "zg16zjZTQ9R89+UOLmEZxHgxDtM=",
+			"path": "github.com/coreos/go-systemd/activation",
+			"revision": "e64a0ec8b42a61e2a9801dc1d0abe539dea79197",
+			"revisionTime": "2019-06-20T07:13:33Z"
+		},
+		{
 			"checksumSHA1": "hCCzdfj3L4KNQYicQSHc3XoyE/s=",
 			"path": "github.com/coreos/go-systemd/unit",
 			"revision": "e64a0ec8b42a61e2a9801dc1d0abe539dea79197",
 			"revisionTime": "2019-06-20T07:13:33Z"
+		},
+		{
+			"checksumSHA1": "/Q5HjtLF7D4QeiFvz7z19j+caZ0=",
+			"path": "github.com/d2g/dhcp4",
+			"revision": "a1d1b6c41b1ce8a71a5121a9cee31809c4707d9c",
+			"revisionTime": "2017-09-04T10:04:07Z"
+		},
+		{
+			"checksumSHA1": "GmSRZZUDm/pv9ovomzl2COiKCak=",
+			"path": "github.com/d2g/dhcp4client",
+			"revision": "b7a004ff1a09ab6723625e179a44e476306977a6",
+			"revisionTime": "2018-06-22T10:25:33Z"
 		},
 		{
 			"checksumSHA1": "ByRdQMv2yl16W6Tp9gUW1nNmpuI=",
