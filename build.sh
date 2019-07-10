@@ -87,7 +87,7 @@ fi
 # Build init
 cd src/init
 export GOPATH=/go/stage1-xen
-go build -o target/rootfs/init
+go build -o /go/stage1-xen/target/rootfs/init
 cd ../..
 
 # Network plugins
