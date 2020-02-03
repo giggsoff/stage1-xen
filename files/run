@@ -3,6 +3,10 @@
 dir=/var/lib/rkt/pods/run
 uuid=${@: -1}
 pod=$dir/$uuid
+if [ ! -d "$pod" ]; then
+  dir=$(dirname "$(dirname "$(dirname "$(dirname "$(readlink -f "$0")")")")")
+  pod=$dir/$uuid
+fi
 stage1=$pod/stage1/rootfs
 # Assumes 1 App
 stage2m=$pod/pod

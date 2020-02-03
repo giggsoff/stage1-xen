@@ -1,4 +1,9 @@
 #!/bin/bash
-
-xl destroy $(cat "/var/lib/rkt/pods/run/$1/pid") &>/dev/null
+pidfile=/var/lib/rkt/pods/run/$1/pid
+if [[ -f $pidfile ]]; then
+  xl destroy $(cat "$pidfile") &>/dev/null
+else
+  pidfile="$(dirname "$0")/../../pid"
+  xl destroy $(cat "$pidfile") &>/dev/null
+fi
 exit 0
