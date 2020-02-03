@@ -74,6 +74,7 @@ export GOPATH=/root/go
 mkdir -p /root/go/src
 bash build.sh
 cp stage1-xen.aci /root/
+cp stage1-xen.aci /usr/sbin/
 echo "Build done"
 read -rsn1 -p"Press any key to reboot";echo
 reboot now
