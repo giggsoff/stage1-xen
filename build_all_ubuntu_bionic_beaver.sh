@@ -23,6 +23,7 @@ sed -i 's/GRUB_DEFAULT=[0-9]*/GRUB_DEFAULT=2/g' /etc/default/grub
 sed -i 's/GRUB_TIMEOUT_STYLE=.*/GRUB_TIMEOUT_STYLE=menu/g' /etc/default/grub
 sed -i 's/GRUB_TIMEOUT=[0-9]*/GRUB_TIMEOUT=10/g' /etc/default/grub
 update-grub
+brctl addbr xenbr0
 echo "QEMU build"
 cd /root/qemu || exit
 export DIR=/root/xen
